@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/styles/styles.css" />
+    <title>Lesanten</title>
+  </head>
+  <body>
+    <div class="grid-12-cols">
+      <main class="flex-col g-8 col-9 p-4 border-right">
+        <img
+          src="./src/media/lesantenCoverHorizontalText.png"
+          alt="cd cover as a main picture"
+          class="logo rounded"
+        />
+        <img
+          src="./src/media/lesantenCoverHorizontalPic.png"
+          alt="cd cover as a main picture"
+          class="w-full rounded"
+        />
+        <section id="band">
+          <h2>Kapela</h2>
+          <p>
+            Lesanten je kapela, která vznikla v roce 2015. Její členové se
+            seznámili na konzervatoři a od té doby hrají společně. Kapela se
+            zaměřuje na autorskou tvorbu a vystupuje na koncertech po celé České
+            republice.
+          </p>
+        </section>
+        <section id="recorings">
+          <recordings />
+        </section>
+        <section id="contacts">
+          <h2>Kontakty</h2>
+          <div class="flex-row g-4 w-fit">
+            <div class="flex-col g-1">
+              <h3 class="font-larger">Josef Žerdík</h3>
+              <div class="flex-row g-1 align-center font-large">
+                <icon_mail />
+                <span>mail@mail.com</span>
+              </div>
+              <div class="flex-row g-1 align-center font-large">
+                <icon_phone />
+                <span>+420 777 777 777</span>
+              </div>
+            </div>
+            <div class="flex-col g-1">
+              <h3 class="font-larger">Zuzana Teichmannová</h3>
+              <div class="flex-row g-1 align-center font-large">
+                <icon_mail />
+                <span>mail@mail.com</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex-row flex-wrap g-1">
+            <icon_facebook />
+            <icon_soundcloud />
+            <icon_youtube />
+            <icon_spotify />
+          </div>
+        </section>
+      </main>
+      <aside class="col-3">
+        <side_bar />
+      </aside>
+    </div>
+    <footer class="warning">Stránky jsou stále v procesu vývoje</footer>
+  </body>
+</html>
