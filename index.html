@@ -7,18 +7,18 @@
     <title>Lesanten</title>
   </head>
   <body>
-    <div class="grid-12-cols">
-      <main class="flex-col g-8 col-9 p-4 border-right">
+    <div class="grid-12-cols main-grid">
+      <main id="main" class="flex-col g-8 col-9 p-4 border-right sm-col-12">
         <img
           src="./src/media/lesantenCoverHorizontalText.png"
           alt="cd cover as a main picture"
           class="logo rounded"
         />
-        <img
+        <!-- <img
           src="./src/media/lesantenCoverHorizontalPic.png"
           alt="cd cover as a main picture"
           class="w-full rounded"
-        />
+        /> -->
         <section id="band">
           <h2>Kapela</h2>
           <p>
@@ -31,7 +31,7 @@
         <section id="recorings">
           <h2>Nahrávky</h2>
 <div class="grid-12-cols g-4">
-  <article class="col-6 sm-col-12">
+  <div class="col-6 sm-col-12">
     <h3>Lesanten</h3>
     <p>Album vzniklo v roce 2023.</p>
     <h4>Nahrávky ke stažení</h4>
@@ -92,8 +92,8 @@
   </div>
 </div>
 
-  </article>
-  <article class="col-6 sm-col-12">
+  </div>
+  <div class="col-6 sm-col-12">
     <h3>Na jabloni</h3>
     <p>Album vzniklo v roce 2003</p>
     <h4>Nahrávky ke stažení</h4>
@@ -161,7 +161,7 @@
   </div>
 </div>
 
-  </article>
+  </div>
 </div>
 
         </section>
@@ -216,14 +216,14 @@
           </div>
         </section>
       </main>
-      <aside class="col-3">
+      <aside id="aside" class="col-3 sm-d-none">
         <div class="flex-col pt-4 g-4 h-full-viewport sticky-sidebar">
   <img
     src="./src/media/lesantenCover.webp"
     alt="cd cover as a profile"
     class="rounded-full mx-4 border border--highlight"
   />
-  <div class="flex-col g-1 font-x-large">
+  <menu class="flex-col g-1 font-x-large">
     <a href="#band">
       <div class="w-full border-bottom-light bold">
         <span class="mx-4">Kapela</span>
@@ -239,7 +239,7 @@
         <span class="mx-4"> Kontakty</span>
       </div>
     </a>
-  </div>
+  </menu>
   <div class="flex-row flex-wrap g-1 mx-4 w-auto flex-certer">
     <a href="https://soundcloud.com/lesanten">
       <i>
@@ -303,5 +303,24 @@
       </aside>
     </div>
     <footer class="warning">Stránky jsou stále v procesu vývoje</footer>
+    <button id="menu-button" class="menu-button">
+  <span class="icon-menu"> MENU </span>
+</button>
+
+<script>
+  const menuButton = document.getElementById("menu-button");
+  const main = document.getElementById("main");
+  const aside = document.getElementById("aside");
+  const footer = document.querySelector("footer");
+
+  menuButton.addEventListener("click", () => {
+    main.classList.toggle("sm-col-12");
+    aside.classList.toggle("sm-col-12");
+    aside.classList.toggle("sm-d-none");
+    main.classList.toggle("sm-d-none");
+    footer.classList.toggle("sm-d-none");
+  });
+</script>
+
   </body>
 </html>

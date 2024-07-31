@@ -7,18 +7,18 @@
     <title>Lesanten</title>
   </head>
   <body>
-    <div class="grid-12-cols">
-      <main class="flex-col g-8 col-9 p-4 border-right">
+    <div class="grid-12-cols main-grid">
+      <main id="main" class="flex-col g-8 col-9 p-4 border-right sm-col-12">
         <img
           src="./src/media/lesantenCoverHorizontalText.png"
           alt="cd cover as a main picture"
           class="logo rounded"
         />
-        <img
+        <!-- <img
           src="./src/media/lesantenCoverHorizontalPic.png"
           alt="cd cover as a main picture"
           class="w-full rounded"
-        />
+        /> -->
         <section id="band">
           <h2>Kapela</h2>
           <p>
@@ -61,10 +61,11 @@
           </div>
         </section>
       </main>
-      <aside class="col-3">
+      <aside id="aside" class="col-3 sm-d-none">
         <side_bar />
       </aside>
     </div>
     <footer class="warning">Stránky jsou stále v procesu vývoje</footer>
+    <menu_button />
   </body>
 </html>

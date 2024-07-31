@@ -57,6 +57,10 @@ i {
     border-radius: 0.5rem;
 }
 
+.menu-button {
+    display: none;
+}
+
 .font-large i {
     font-size: x-large;
 }
@@ -188,6 +192,10 @@ a {
     padding-bottom: 0.5rem;
 }
 
+.p-0 {
+    padding: 0;
+}
+
 .p-2 {
     padding: 1rem;
 }
@@ -224,6 +232,11 @@ a {
 .sticky-sidebar {
     position: sticky;
     top: 1rem;
+    background-color: var(--lesanten-black);
+}
+
+.sidebar-button {
+    display: none;
 }
 
 .fixed {
@@ -353,6 +366,10 @@ a {
     color: red;
 }
 
+.relative {
+    position: relative;
+}
+
 .flex-row {
     display: flex;
     flex-direction: row;
@@ -424,6 +441,23 @@ a {
     cursor: pointer;
 }
 
+
+
+
+.my-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+iframe {
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+section {
+    padding: 1rem;
+}
+
 @media screen and (max-width: 1506px) {
     .grow-2 {
         grid-column: span 1;
@@ -434,28 +468,55 @@ a {
     }
 }
 
-@media screen and (max-width: 768px) {
-    .flex-row {
-        display: block
-    }
-
-    .my-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-
-    iframe {
-        width: 100%;
-        margin-top: 0.5rem;
-    }
-
-    section {
-        padding: 1rem;
-    }
-}
-
 @media screen and (max-width: 810px) {
+
+    aside img {
+        width: 40%;
+    }
+
+    .menu-button {
+        display: block;
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+    }
+
+    .sm-d-none {
+        display: none;
+    }
+
     .sm-col-12 {
         grid-column: span 12;
+    }
+
+    .border-right {
+        /* border-right: 1px solid var(--lesanten-light-orange); */
+        border-right: none;
+    }
+
+    #main {
+        border: none;
+        border-right: none;
+        padding: 0;
+    }
+
+    body {
+        padding: 1em;
+    }
+
+    span {
+        display: inline;
+    }
+
+
+    .grid-2 {
+        display: flex;
+        justify-content: space-between;
+        /* grid-template-columns: 3fr 1fr;
+        row-gap: 1rem; */
+    }
+
+    .grid-2 span {
+        width: 1em;
     }
 }

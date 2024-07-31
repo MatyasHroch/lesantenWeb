@@ -1,5 +1,6 @@
 export default {
   main: {
+    menu_button: {},
     name: "Main",
     recordings: {
       record_item_list: [

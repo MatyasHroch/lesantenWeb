@@ -1,0 +1,18 @@
+<button id="menu-button" class="menu-button">
+  <span class="icon-menu"> MENU </span>
+</button>
+
+<script>
+  const menuButton = document.getElementById("menu-button");
+  const main = document.getElementById("main");
+  const aside = document.getElementById("aside");
+  const footer = document.querySelector("footer");
+
+  menuButton.addEventListener("click", () => {
+    main.classList.toggle("sm-col-12");
+    aside.classList.toggle("sm-col-12");
+    aside.classList.toggle("sm-d-none");
+    main.classList.toggle("sm-d-none");
+    footer.classList.toggle("sm-d-none");
+  });
+</script>
