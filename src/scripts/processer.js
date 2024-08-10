@@ -29,7 +29,7 @@ async function renderObject(name, values, tagName) {
   // rendering of the PRIMITIVES
   for (const primitiveName in primitives) {
     const value = primitives[primitiveName];
-    const regex = new RegExp(`{${primitiveName}}`);
+    const regex = new RegExp(`{${primitiveName}}`, "g");
     resultString = resultString.replace(regex, value);
   }
 
