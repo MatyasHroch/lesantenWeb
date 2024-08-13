@@ -9,6 +9,7 @@
     --important-color-dark: rgb(172, 99, 23);
     --important-color-even-darker: rgb(121, 69, 16);
     --important-color-2: rgb(34, 124, 112);
+    --important-color-3: rgb(63, 115, 13);
 
     --lesanten-white: rgb(201, 170, 118);
     --absolute-black: rgb(0, 0, 0);
@@ -19,6 +20,7 @@
     --lesanten-very-dark-orange: rgb(121, 69, 16);
     --lesanten-sepia: rgb(110, 65, 17);
     --lesanten-green: rgb(34, 124, 112);
+
 }
 
 
@@ -35,7 +37,7 @@ header {
     background-color: var(--secondary-bg-color-opacity);
     position: sticky;
     top: 0;
-    padding: 1rem 2rem;
+    padding: 1rem 4rem;
     text-align: center;
     display: flex;
     justify-content: space-between;
@@ -138,7 +140,8 @@ section h2 {
     align-items: center;
     gap: 1rem;
     flex-wrap: wrap;
-    font-size: 1.2rem;
+
+    font-size: 1.5rem;
 }
 
 *:target {
@@ -158,10 +161,15 @@ section h2 {
 }
 
 .download-small-button {
-    background-color: var(--important-color-2);
+    background-color: var(--important-color-3);
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 1rem;
+}
+
+.lines-between>*:not(:last-child) {
+    border-bottom: 1px solid var(--main-text-color-opacity);
+    padding-bottom: 0.5rem;
 }
 
 .floating-logo {
@@ -263,6 +271,10 @@ header img {
 
 .mt-4 {
     margin-top: 2rem;
+}
+
+.gap-8 {
+    gap: 4rem;
 }
 
 .gap-4 {
@@ -392,6 +404,24 @@ i.fa-instagram {
     height: 100%;
 }
 
+@media screen and (max-width: 1024px) {
+    .floating-logo {
+        font-size: 1.5rem;
+    }
+
+    .video-container {
+        width: 100%;
+        padding-bottom: 56.25%;
+    }
+
+}
+
+@media screen and (max-width: 820px) {
+    main img {
+        width: 100%;
+    }
+}
+
 
 @media screen and (max-width: 640px) {
 
@@ -448,17 +478,6 @@ i.fa-instagram {
 
 }
 
-@media screen and (max-width: 1024px) {
-    .floating-logo {
-        font-size: 1.5rem;
-    }
-
-    .video-container {
-        width: 100%;
-        padding-bottom: 56.25%;
-    }
-
-}
 
 
 
