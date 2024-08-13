@@ -1,71 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{language}">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.webp" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/b67a1c33ae.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Lesanten</title>
   </head>
   <body>
-    <div class="grid-12-cols main-grid">
-      <main id="main" class="flex-col g-8 col-9 p-4 border-right sm-col-12">
-        <img
-          src="./src/media/lesantenCoverHorizontalText.png"
-          alt="cd cover as a main picture"
-          class="logo rounded"
-        />
-        <!-- <img
-          src="./src/media/lesantenCoverHorizontalPic.png"
-          alt="cd cover as a main picture"
-          class="w-full rounded"
-        /> -->
-        <section id="band">
-          <h2>Kapela</h2>
-          <p>
-            Lesanten je kapela, která vznikla v roce 2015. Její členové se
-            seznámili na konzervatoři a od té doby hrají společně. Kapela se
-            zaměřuje na autorskou tvorbu a vystupuje na koncertech po celé České
-            republice.
-          </p>
-        </section>
-        <section id="recorings">
-          <recordings />
-        </section>
-        <section id="contacts">
-          <h2>Kontakty</h2>
-          <div class="flex-row g-4 w-fit">
-            <div class="flex-col g-1">
-              <h3 class="font-larger">Josef Žerdík</h3>
-              <div class="flex-row g-1 align-center font-large">
-                <icon_mail />
-                <span>mail@mail.com</span>
-              </div>
-              <div class="flex-row g-1 align-center font-large">
-                <icon_phone />
-                <span>+420 777 777 777</span>
-              </div>
-            </div>
-            <div class="flex-col g-1">
-              <h3 class="font-larger">Zuzana Teichmannová</h3>
-              <div class="flex-row g-1 align-center font-large">
-                <icon_mail />
-                <span>mail@mail.com</span>
-              </div>
-            </div>
-          </div>
-          <div class="flex-row flex-wrap g-1">
-            <icon_facebook />
-            <icon_soundcloud />
-            <icon_youtube />
-            <icon_spotify />
-          </div>
-        </section>
-      </main>
-      <aside id="aside" class="col-3 sm-d-none">
-        <side_bar />
-      </aside>
-    </div>
-    <footer class="warning">Stránky jsou stále v procesu vývoje</footer>
-    <menu_button />
+    <the_header />
+    <main class="relative">
+      <img src="./media/lesantenCoverHorizontal.png" alt="picture_of_a_band" />
+      <!-- <img src="/media/logo.png" alt="logo" /> -->
+      <!-- <div class="home_background"></div> -->
+      <gigs_page />
+      <records_page />
+      <contact_page />
+    </main>
+    <footer>
+      <div>Stránky jsou stále v procesu vývoje</div>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,94 @@
+<header>
+  <a href="#" class="no-href-styles">
+    <img
+      src="./media/lesantenCover.webp"
+      alt="logo"
+      class="rounded-full mx-4 border border--highlight"
+    />
+  </a>
+
+  <div class="header-logo">
+    <img
+      src="./media/lesantenCoverHorizontalText.png"
+      alt="band name cut from the album cover"
+    />
+  </div>
+  <!-- <span class="font-size-1-2">f i e l d .</span> -->
+  <nav>
+    <ul class="navigation">
+      <!-- <li>
+          <a href="#news">{news}</a>
+        </li> -->
+      <!-- <li>
+          <a href="#about">{about}</a>
+        </li> -->
+      <!-- <li>
+        <a href="#gigs">{gigs}</a>
+      </li> -->
+      <li>
+        <a href="#records">{records}</a>
+      </li>
+      <li>
+        <a href="#contact">{contact}</a>
+      </li>
+    </ul>
+  </nav>
+  <button class="menu-button">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+  <dialog class="dialog-menu">
+    <div class="dialog-container">
+      <header>
+        <button class="menu-button js-close-button">
+          <i class="fa-solid fa-x"></i>
+        </button>
+      </header>
+      <nav>
+        <ul class="mobile-navigation">
+          <!-- <li>
+                <a href="#news">{news}</a>
+              </li> -->
+          <!-- <li>
+                <a href="#about">{about}</a>
+              </li> -->
+          <li>
+            <a href="#gigs">{gigs}</a>
+          </li>
+          <li>
+            <a href="#records">{records}</a>
+          </li>
+          <li>
+            <a href="#contact">{contact}</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="flex justify-center">
+        <social_media />
+      </div>
+    </div>
+  </dialog>
+</header>
+<script>
+  const menuButton = document.querySelector(".menu-button");
+  const dialogMenu = document.querySelector(".dialog-menu");
+  const closeMenuButton = document.querySelector(".js-close-button");
+  const menuItems = document.querySelectorAll(".mobile-navigation li");
+
+  const body = document.getElementsByTagName("body")[0];
+
+  function openMenu() {
+    dialogMenu.showModal();
+    body.classList.add("no-scrolling");
+  }
+
+  function closeMenu() {
+    dialogMenu.close();
+    body.classList.remove("no-scrolling");
+  }
+
+  menuButton.addEventListener("click", openMenu);
+  closeMenuButton.addEventListener("click", closeMenu);
+  for (const item of menuItems) {
+    item.addEventListener("click", closeMenu);
+  }
+</script>

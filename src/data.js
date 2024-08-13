@@ -1,8 +1,17 @@
 export default {
   main: {
+    language: "cs",
     menu_button: {},
     name: "Main",
-    recordings: {
+    the_header: {
+      contact: "Kontakt",
+      gigs: "Koncerty",
+      news: "Novinky",
+      about: "Kapela",
+      records: "Nahrávky",
+      social_media: {},
+    },
+    records_page: {
       record_item_list: [
         {
           name: "Naivní malíř",
@@ -59,13 +68,8 @@ export default {
         },
       ],
     },
-    icon_phone: {},
-    icon_mail: {},
-    side_bar: {
-      icon_soundcloud: {},
-      icon_facebook: {},
-      icon_youtube: {},
-      icon_spotify: {},
+    contact_page: {
+      title: "Kontakt",
     },
   },
 };
