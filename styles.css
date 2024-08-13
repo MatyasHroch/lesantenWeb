@@ -1,12 +1,35 @@
 :root {
-    --main-bg-color: rgb(30, 30, 30);
-    --main-bg-color-opacity: rgb(30, 30, 30, 0.8);
-    --main-text-color: #E0E0E0;
-    --main-text-color-opacity: rgba(224, 224, 224, 0.8);
+    --main-bg-color: rgb(24, 25, 20);
+    --main-bg-color-opacity: rgb(24, 25, 20, 0.8);
+    --main-text-color: rgb(201, 170, 118);
+    --main-text-color-opacity: rgba(201, 170, 118, 0.8);
     --secondary-bg-color: rgb(51, 51, 51);
     --secondary-bg-color-opacity: rgb(51, 51, 51, 0.8);
-    --secondary-bg-color-opacity2: rgb(51, 51, 51, 0.8);
+    --important-color: rgb(197, 141, 20);
+    --important-color-dark: rgb(172, 99, 23);
+    --important-color-even-darker: rgb(121, 69, 16);
+    --important-color-2: rgb(34, 124, 112);
+
+    --lesanten-white: rgb(201, 170, 118);
+    --absolute-black: rgb(0, 0, 0);
+    --lesanten-black: rgb(24, 25, 20);
+    --lesanten-drab: rgb(113, 96, 25);
+    --lesanten-light-orange: rgb(197, 141, 20);
+    --lesanten-dark-orange: rgb(172, 99, 23);
+    --lesanten-very-dark-orange: rgb(121, 69, 16);
+    --lesanten-sepia: rgb(110, 65, 17);
+    --lesanten-green: rgb(34, 124, 112);
 }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body {
+    font-family: Roboto;
+    color: var(--lesanten-light-orange);
+}
+
 
 header {
     background-color: var(--secondary-bg-color-opacity);
@@ -23,14 +46,13 @@ header {
 h2 {
     font-size: 2rem;
     font-weight: bold;
-    color: white;
+    color: var(--important-color);
     margin: 0;
 }
 
 h3 {
     font-size: 1.5rem;
     font-weight: bold;
-    color: white;
     margin: 0;
 }
 
@@ -103,7 +125,7 @@ section {
 section h2 {
     font-size: 2rem;
     font-weight: bold;
-    color: white;
+    color: var(--important-color);
     margin: 0;
     margin-bottom: 1rem;
 }
@@ -135,6 +157,13 @@ section h2 {
     border-radius: 0.25rem;
 }
 
+.download-small-button {
+    background-color: var(--important-color-2);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 1rem;
+}
+
 .floating-logo {
     position: absolute;
     margin: auto;
@@ -150,6 +179,14 @@ section h2 {
 
 .block {
     display: block;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 .font-size-1-2 {
@@ -196,8 +233,20 @@ header img {
     align-items: center;
 }
 
+.items-stretch {
+    align-items: stretch;
+}
+
 .justify-center {
     justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.p-2 {
+    padding: 1rem;
 }
 
 .mt-1 {
@@ -210,6 +259,10 @@ header img {
 
 .mt-4 {
     margin-top: 2rem;
+}
+
+.gap-4 {
+    gap: 2rem;
 }
 
 .gap-2 {
@@ -234,6 +287,10 @@ header img {
 
 .h-full {
     height: 100%;
+}
+
+.rounded-full {
+    border-radius: 100%;
 }
 
 .font-size-normal {
