@@ -64,12 +64,20 @@ export default {
           filename: "Samotarska",
         },
         {
+          name: "Tulipán",
+          filename: "Tulipan",
+        },
+        {
           name: "Přetichá",
           filename: "Preticha",
         },
         {
           name: "Pro rudu",
           filename: "ProRudu",
+        },
+        {
+          name: "Joj Mamo",
+          filename: "JojMamo",
         },
         {
           name: "Procházky",
