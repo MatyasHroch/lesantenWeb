@@ -76,6 +76,13 @@
 
   const body = document.getElementsByTagName("body")[0];
 
+  // To handle the mobile back button click event
+  window.addEventListener("popstate", () => {
+    if (dialogMenu.open) {
+      closeMenu();
+    }
+  });
+
   function openMenu() {
     dialogMenu.showModal();
     body.classList.add("no-scrolling");
