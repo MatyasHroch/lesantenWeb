@@ -81,6 +81,7 @@ main {
 
 main img {
     max-height: calc(100vh - 100px);
+    max-width: 100%;
     width: auto;
     margin: auto;
 }
@@ -416,11 +417,6 @@ i.fa-instagram {
 
 }
 
-@media screen and (max-width: 820px) {
-    main img {
-        width: 100%;
-    }
-}
 
 
 @media screen and (max-width: 640px) {
