@@ -43,13 +43,13 @@ export default {
         },
         {
           name: "Stříbrostín",
-          filename: "Strbrostn",
+          filename: "Stribrostin",
         },
       ],
       record_item_2_list: [
         {
           name: "Přípitek",
-          filename: "Pritek",
+          filename: "Pripitek",
         },
         {
           name: "Na Jabloni",
