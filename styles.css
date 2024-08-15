@@ -35,15 +35,15 @@ body {
 
 header {
     background-color: var(--secondary-bg-color-opacity);
-    position: sticky;
+    position: fixed;
     top: 0;
-    padding: 1rem 4rem;
+    right: 0;
+    padding: 10rem 4rem;
     text-align: center;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     z-index: 2;
 }
+
 
 h2 {
     font-size: 2rem;

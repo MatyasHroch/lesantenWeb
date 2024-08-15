@@ -12,132 +12,13 @@
     <title>Lesanten</title>
   </head>
   <body>
-    <header>
-  <a href="#" class="no-href-styles">
-    <img
-      src="./media/lesantenCover.webp"
-      alt="logo"
-      class="rounded-full mx-4 border border--highlight"
-    />
-  </a>
-
-  <div class="header-logo">
-    <img
-      src="./media/lesantenCoverHorizontalText.png"
-      alt="band name cut from the album cover"
-    />
-  </div>
-  <!-- <span class="font-size-1-2">f i e l d .</span> -->
-  <nav>
-    <ul class="navigation">
-      <!-- <li>
-          <a href="#news">Novinky</a>
-        </li> -->
-      <!-- <li>
-          <a href="#about">Kapela</a>
-        </li> -->
-      <!-- <li>
-        <a href="#gigs">Koncerty</a>
-      </li> -->
-      <li>
-        <a href="#records">Nahrávky</a>
-      </li>
-      <li>
-        <a href="#contact">Kontakt</a>
-      </li>
-    </ul>
-  </nav>
-  <button class="menu-button">
-    <i class="fa-solid fa-bars"></i>
-  </button>
-  <dialog class="dialog-menu">
-    <div class="dialog-container">
-      <header>
-        <button class="menu-button js-close-button">
-          <i class="fa-solid fa-x"></i>
-        </button>
-      </header>
-      <nav>
-        <ul class="mobile-navigation">
-          <!-- <li>
-                <a href="#news">Novinky</a>
-              </li> -->
-          <!-- <li>
-                <a href="#about">Kapela</a>
-              </li> -->
-          <!-- <li>
-            <a href="#gigs">Koncerty</a>
-          </li> -->
-          <li>
-            <a href="#records">Nahrávky</a>
-          </li>
-          <li>
-            <a href="#contact">Kontakt</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="flex justify-center">
-        <div class="flex gap-2 items-center">
-  <a href="https://www.facebook.com/lesanten">
-    <i class="fa-brands fa-facebook"></i>
-  </a>
-  <a
-    href="https://www.youtube.com/watch?v=tFD8BZKMEj0&list=OLAK5uy_l1AoVrZA-dv2VE2OezuAbnSvWit2-NHjM"
-  >
-    <i class="fa-brands fa-youtube"></i>
-  </a>
-  <a href="https://soundcloud.com/lesanten">
-    <i class="fa-brands fa-soundcloud"></i>
-  </a>
-  <a
-    href="https://open.spotify.com/album/4DDxT2CDitBvQF3Xiz49eF?si=joRkZkwsTaOwQ4Rdabpyzw&context=spotify%3Aalbum%3A4DDxT2CDitBvQF3Xiz49eF&fbclid=IwY2xjawEPxo9leHRuA2FlbQIxMQABHR5vDAOEEVARxYXvq36JqckBKDTri0OnRE9rHHPNoKE0lkyXsBYX14JsUQ_aem_TsZhO6tBwasEMs_cIU6ysw&nd=1&dlsi=b5c1955e37d54682"
-  >
-    <i class="fa-brands fa-spotify"></i>
-  </a>
-</div>
-
-      </div>
-    </div>
-  </dialog>
-</header>
-<script>
-  const menuButton = document.querySelector(".menu-button");
-  const dialogMenu = document.querySelector(".dialog-menu");
-  const closeMenuButton = document.querySelector(".js-close-button");
-  const menuItems = document.querySelectorAll(".mobile-navigation li");
-
-  const body = document.getElementsByTagName("body")[0];
-
-  // To handle the mobile back button click event
-  window.addEventListener("popstate", () => {
-    if (dialogMenu.open) {
-      closeMenu();
-    }
-  });
-
-  function openMenu() {
-    dialogMenu.showModal();
-    body.classList.add("no-scrolling");
-  }
-
-  function closeMenu() {
-    dialogMenu.close();
-    body.classList.remove("no-scrolling");
-  }
-
-  menuButton.addEventListener("click", openMenu);
-  closeMenuButton.addEventListener("click", closeMenu);
-  for (const item of menuItems) {
-    item.addEventListener("click", closeMenu);
-  }
-</script>
-
-    <main class="relative">
-      <img src="./media/lesantenCoverHorizontal.png" alt="picture_of_a_band" />
-      <!-- <img src="/media/logo.png" alt="logo" /> -->
-      <!-- <div class="home_background"></div> -->
-      <gigs_page />
-      <section id="records">
+    <div class="flex justify-between">
+      <main class="relative">
+        <img src="./media/lesantenCover.png" alt="picture_of_a_band" />
+        <!-- <img src="/media/logo.png" alt="logo" /> -->
+        <!-- <div class="home_background"></div> -->
+        <gigs_page />
+        <section id="records">
   <h2>Nahrávky</h2>
   <div class="flex flex-wrap gap-8 items-stretch">
     <div>
@@ -497,7 +378,7 @@
   </div>
 </section>
 
-      <section id="contact">
+        <section id="contact">
   <h2>Kontakt</h2>
   <div class="flex flex-col gap-2">
     <div class="flex flex-col">
@@ -522,7 +403,150 @@
   <social_media />
 </section>
 
-    </main>
+      </main>
+      <header>
+  <a href="#" class="no-href-styles">
+    <img
+      src="./media/lesantenCover.webp"
+      alt="logo"
+      class="rounded-full mx-4 border border--highlight"
+    />
+  </a>
+
+  <div class="header-logo">
+    <img
+      src="./media/lesantenCoverHorizontalText.png"
+      alt="band name cut from the album cover"
+    />
+  </div>
+  <div class="dialog-container">
+    <nav>
+      <ul class="mobile-navigation">
+        <!-- <li>
+              <a href="#news">Novinky</a>
+            </li> -->
+        <!-- <li>
+              <a href="#about">Kapela</a>
+            </li> -->
+        <!-- <li>
+          <a href="#gigs">Koncerty</a>
+        </li> -->
+        <li>
+          <a href="#records">Nahrávky</a>
+        </li>
+        <li>
+          <a href="#contact">Kontakt</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="flex justify-center">
+      <div class="flex gap-2 items-center">
+  <a href="https://www.facebook.com/lesanten">
+    <i class="fa-brands fa-facebook"></i>
+  </a>
+  <a
+    href="https://www.youtube.com/watch?v=tFD8BZKMEj0&list=OLAK5uy_l1AoVrZA-dv2VE2OezuAbnSvWit2-NHjM"
+  >
+    <i class="fa-brands fa-youtube"></i>
+  </a>
+  <a href="https://soundcloud.com/lesanten">
+    <i class="fa-brands fa-soundcloud"></i>
+  </a>
+  <a
+    href="https://open.spotify.com/album/4DDxT2CDitBvQF3Xiz49eF?si=joRkZkwsTaOwQ4Rdabpyzw&context=spotify%3Aalbum%3A4DDxT2CDitBvQF3Xiz49eF&fbclid=IwY2xjawEPxo9leHRuA2FlbQIxMQABHR5vDAOEEVARxYXvq36JqckBKDTri0OnRE9rHHPNoKE0lkyXsBYX14JsUQ_aem_TsZhO6tBwasEMs_cIU6ysw&nd=1&dlsi=b5c1955e37d54682"
+  >
+    <i class="fa-brands fa-spotify"></i>
+  </a>
+</div>
+
+    </div>
+  </div>
+  <button class="menu-button">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+  <dialog class="dialog-menu">
+    <div class="dialog-container">
+      <header>
+        <button class="menu-button js-close-button">
+          <i class="fa-solid fa-x"></i>
+        </button>
+      </header>
+      <nav>
+        <ul class="mobile-navigation">
+          <!-- <li>
+                <a href="#news">Novinky</a>
+              </li> -->
+          <!-- <li>
+                <a href="#about">Kapela</a>
+              </li> -->
+          <!-- <li>
+            <a href="#gigs">Koncerty</a>
+          </li> -->
+          <li>
+            <a href="#records">Nahrávky</a>
+          </li>
+          <li>
+            <a href="#contact">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="flex justify-center">
+        <div class="flex gap-2 items-center">
+  <a href="https://www.facebook.com/lesanten">
+    <i class="fa-brands fa-facebook"></i>
+  </a>
+  <a
+    href="https://www.youtube.com/watch?v=tFD8BZKMEj0&list=OLAK5uy_l1AoVrZA-dv2VE2OezuAbnSvWit2-NHjM"
+  >
+    <i class="fa-brands fa-youtube"></i>
+  </a>
+  <a href="https://soundcloud.com/lesanten">
+    <i class="fa-brands fa-soundcloud"></i>
+  </a>
+  <a
+    href="https://open.spotify.com/album/4DDxT2CDitBvQF3Xiz49eF?si=joRkZkwsTaOwQ4Rdabpyzw&context=spotify%3Aalbum%3A4DDxT2CDitBvQF3Xiz49eF&fbclid=IwY2xjawEPxo9leHRuA2FlbQIxMQABHR5vDAOEEVARxYXvq36JqckBKDTri0OnRE9rHHPNoKE0lkyXsBYX14JsUQ_aem_TsZhO6tBwasEMs_cIU6ysw&nd=1&dlsi=b5c1955e37d54682"
+  >
+    <i class="fa-brands fa-spotify"></i>
+  </a>
+</div>
+
+      </div>
+    </div>
+  </dialog>
+</header>
+<script>
+  const menuButton = document.querySelector(".menu-button");
+  const dialogMenu = document.querySelector(".dialog-menu");
+  const closeMenuButton = document.querySelector(".js-close-button");
+  const menuItems = document.querySelectorAll(".mobile-navigation li");
+
+  const body = document.getElementsByTagName("body")[0];
+
+  // To handle the mobile back button click event
+  window.addEventListener("popstate", () => {
+    if (dialogMenu.open) {
+      closeMenu();
+    }
+  });
+
+  function openMenu() {
+    dialogMenu.showModal();
+    body.classList.add("no-scrolling");
+  }
+
+  function closeMenu() {
+    dialogMenu.close();
+    body.classList.remove("no-scrolling");
+  }
+
+  menuButton.addEventListener("click", openMenu);
+  closeMenuButton.addEventListener("click", closeMenu);
+  for (const item of menuItems) {
+    item.addEventListener("click", closeMenu);
+  }
+</script>
+
+    </div>
     <footer>
       <div>Stránky jsou stále v procesu vývoje</div>
     </footer>
