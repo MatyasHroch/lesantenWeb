@@ -44,6 +44,39 @@ header {
     z-index: 2;
 }
 
+aside {
+    background-color: var(--secondary-bg-color-opacity);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: start;
+
+    align-items: center;
+    top: 0;
+    right: 0;
+    padding: 10rem 4rem;
+    z-index: 2;
+}
+
+
+h1 {
+    padding-left: 4rem;
+    padding-top: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--important-color);
+    margin: 0;
+}
+
+@media screen and (max-width: 640px) {
+    h1 {
+        padding-left: 1rem;
+        padding-top: 1rem;
+        font-size: 2rem;
+    }
+
+}
 
 h2 {
     font-size: 2rem;
@@ -81,9 +114,16 @@ main {
 
 main img {
     max-height: calc(100vh - 100px);
+    padding: 1rem 4rem;
     max-width: 100%;
     width: auto;
-    margin: auto;
+}
+
+@media screen and (max-width: 640px) {
+    main img {
+        padding: 1rem 1rem;
+    }
+
 }
 
 address,
@@ -223,6 +263,10 @@ header img {
     width: 4em;
 }
 
+aside img {
+    width: 4em;
+}
+
 
 .no-href-styles {
     text-decoration: none;
@@ -306,6 +350,10 @@ header img {
     height: 100%;
 }
 
+.h-full-viewport {
+    height: 100vh;
+}
+
 .rounded-full {
     border-radius: 100%;
 }
@@ -334,6 +382,7 @@ dialog {
 .dialog-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 2rem;
 }
 
@@ -353,6 +402,13 @@ dialog header {
     display: flex;
     justify-content: right;
     align-items: center;
+    background: none;
+}
+
+dialog aside {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     background: none;
 }
 
@@ -434,11 +490,15 @@ i.fa-instagram {
     }
 
     header,
+    aside,
     section {
         padding: 0.5rem 1rem;
     }
 
-    header img {
+    
+
+    header img,
+    aside img {
         /* display: none; */
         width: 2.5em;
     }
@@ -465,6 +525,10 @@ i.fa-instagram {
 
 
     header>nav {
+        display: none;
+    }
+
+    aside>nav {
         display: none;
     }
 

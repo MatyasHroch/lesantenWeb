@@ -3,7 +3,7 @@ export default {
     language: "cs",
     menu_button: {},
     name: "Main",
-    the_header: {
+    side_bar2: {
       contact: "Kontakt",
       gigs: "Koncerty",
       news: "Novinky",
