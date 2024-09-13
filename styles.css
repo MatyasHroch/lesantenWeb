@@ -113,10 +113,10 @@ main {
 }
 
 main img {
-    max-height: calc(100vh - 100px);
+    max-height: calc(100vh - 150px);
     padding: 1rem 4rem;
     max-width: 100%;
-    width: auto;
+    width: fit-content;
 }
 
 @media screen and (max-width: 640px) {
@@ -461,7 +461,13 @@ i.fa-instagram {
     height: 100%;
 }
 
+
 @media screen and (max-width: 1024px) {
+
+    aside {
+        display: none;
+    }
+
     .floating-logo {
         font-size: 1.5rem;
     }
@@ -469,6 +475,10 @@ i.fa-instagram {
     .video-container {
         width: 100%;
         padding-bottom: 56.25%;
+    }
+
+    .menu-button {
+        display: block;
     }
 
 }
@@ -495,7 +505,7 @@ i.fa-instagram {
         padding: 0.5rem 1rem;
     }
 
-    
+
 
     header img,
     aside img {
@@ -530,10 +540,6 @@ i.fa-instagram {
 
     aside>nav {
         display: none;
-    }
-
-    .menu-button {
-        display: block;
     }
 
 }
