@@ -388,6 +388,9 @@ dialog {
 
 .menu-button {
     display: none;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
     border: none;
     padding: 0.25rem 0.25rem;
     color: var(--main-text-color);
@@ -542,6 +545,10 @@ i.fa-instagram {
         display: none;
     }
 
+    .menu-button {
+        top: 1rem;
+        right: 1rem;
+    }
 }
 
 
